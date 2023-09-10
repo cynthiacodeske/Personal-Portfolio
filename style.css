@@ -17,6 +17,9 @@ header img{
     object-fit: cover;
     max-width: 100%;
 }
+.img-zoom:hover {
+    transform: scale(1.03);
+}
 header h1 {
     font-size: 36px;
     margin-bottom: 10px;
@@ -45,9 +48,8 @@ header nav ul li a:hover {
     border-radius: 5px;
     box-shadow: inset;
     margin: 15px;
+    line-height: 1.5;
 }
-#projects
-
 #contact {
     background-color: #fff;
     padding: 20px;
@@ -55,23 +57,59 @@ header nav ul li a:hover {
     box-shadow: inset;
     margin: 15px;
 }
-footer {
-    background-color:blue;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
 label {
     font-weight: bold;
 }
-input [type="text"] {
-    width: 100%;
+input[type="email"],
+input[type="text"] {
+    width: 200px;
     padding: 5px;
     border-radius: 5px;
 }
+input[type="email"],
+input[type="text"]:valid {
+    border-color: #0f0;
+}
+input[type="email"],
+input[type="text"]:invalid {
+    border-color: #f00;
+}
+#userComment {
+    height: auto;
+    resize: vertical;
+    width: 20%;
+}
+input[type="text"].input-text,
+textarea.input-text:valid {
+    border-color: #0f0;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type="text"].input-text,
+textarea.input-text:invalid {
+    border-color: #f00;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 15px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+button:hover {
+    background-color: rgb(3, 182, 3);
+    transform: scale(1.1);
+}
 #projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 20px;
 }
 .project-card {
@@ -100,26 +138,9 @@ a:hover {
 a:visited {
     color: red;
 }
-input[type="email"],
-input[type="text"]:valid {
-    border-color: #0f0;
-}
-input[type="email"],
-input[type="text"]:invalid {
-    border-color: #f00;
-}
-button {
-    padding: 5px 15px;
-    background-color: darkgreen;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor:pointer;
-}
-button:hover {
-    background-color: rgb(104, 255, 104);
-    transform: scale(1.1);
-}
-.img-zoom:hover {
-    transform: scale(1.03);
+footer {
+    background-color:blue;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
