@@ -9,7 +9,7 @@ header{
     background-color: aquamarine;
     text-align: center;
     padding: 20px;
-    height: 550px;
+    max-height: 100%;
 }
 header img{
     border-radius: 100%;
