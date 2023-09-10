@@ -58,4 +58,67 @@ footer {
     text-align: center;
     padding: 10px;
 }
+label {
+    font-weight: bold;
+}
+input [type="text"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+.project-card img {
+    max-width: 100%;
+    height: auto;
+}
+.project-card p {
+   margin: 10px 0; 
+}
+.project-card:hover {
+    transform: scale(1.2)
+}
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: red;
+}
+input[type="text"]:valid {
+    border-color: #0f0;
+}
+input[type="text"]:invalid {
+    border-color: #f00;
+}
+button {
+    padding: 5px 15px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+button:hover {
+    background-color: rgb(104, 255, 104);
+    transform: scale(1.1);
+}
+.img-zoom:hover {
+    transform: scale(1.03);
+}
+
+
+
 
