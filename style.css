@@ -77,7 +77,7 @@ input[type="text"]:invalid {
 #userComment {
     height: auto;
     resize: vertical;
-    width: 400px;
+    width: 350px;
 }
 input[type="text"].input-text,
 textarea.input-text:valid {
