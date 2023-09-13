@@ -49,6 +49,8 @@ header nav ul li a:hover {
     box-shadow: inset;
     margin: 15px;
     line-height: 1.5;
+    width: 500px;
+    align-items: center;
 }
 #contact {
     background-color: #fff;
